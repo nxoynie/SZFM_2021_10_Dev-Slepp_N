@@ -88,6 +88,12 @@ Az ADMINOK és a LÁTOGATÓK különbözőképpen tudják majd használni a rend
 2.2. Váltás éjszakai és nappali mód között.</br>
 2.3. A LÁTOGATÓ eldöntheti, hogy anonim szeretne e maradni, vagy a kitöltéséhez adja a nevét.</br></br>
 
+<h2>Funkció – követelmény megfeleltetés</h2>
+A rendszer legfontosabb dolga az adatok eltárolása lesz, ezek egy adatbázisrendszerbe lesznek bevezetve.</br>
+Válasznak a látogató csak számot irhat be, ezt ellenőrizni foglyuk.</br>
+A statisztikákat nem az adminisztrátoroknak kell megcsinálniuk, ezt egy algoritmus csinálja majd meg.</br>
+A rendszer a weben keresztül lesz elérhető, fontos, hogy bármilyen böngészőben és eszközön elérhető legyen,</br> ezért reszponziv webdizájnt alkalmazunk az oldal megvalósításához.</br> 
+
 <h2>A rendszer céljai és nem céljai</h2>
 A rendszer céljai: </br>
 -nagy mennyiségű minta gyűjtése</br>
