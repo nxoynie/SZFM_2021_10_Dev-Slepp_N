@@ -14,4 +14,17 @@ Az ADMINOK és a LÁTOGATÓK különbözőképpen tudják majd használni a rend
 2. LÁTOGATÓK:</br>
 2.1. Kérdőívek és az azt megelőző tesztek kitöltése.</br>
 2.2. Váltás éjszakai és nappali mód között.</br>
-2.3. A LÁTOGATÓ eldöntheti, hogy anonim szeretne e maradni, vagy a kitöltéséhez adja a nevét.</br>
+2.3. A LÁTOGATÓ eldöntheti, hogy anonim szeretne e maradni, vagy a kitöltéséhez adja a nevét.</br></br>
+
+<h2>A rendszer céljai és nem céljai</h2>
+A rendszer céljai: </br>
+-nagy mennyiségű minta gyűjtése</br>
+-becslés megadása a jövőre tekintve egy adott témában</br>
+-adatok eltárolása</br>
+-eltárolt adatokhoz statisztika készítése</br>
+-könnyen használható felület biztosítása a látogatóknak</br>
+-egyszerű mód kérdőívek készítésére</br></br>
+Nem a rendszer céljai:</br>
+-a jövő pontos meghatározása</br>
+-akárkinek lehetőséget adni egy kérdőív elkészítéséhez</br>
+-a nem anonim kitöltők adatainak felhasználása</br>
