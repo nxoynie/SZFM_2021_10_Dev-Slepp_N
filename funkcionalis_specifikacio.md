@@ -29,7 +29,7 @@
 
 <h2>Forgatókönyvek</h2><br>
 
-A felhasználó megkezdi a kérdőívet valamilyen böngésző segítségével. 
-A kitöltés során különböző kérdéseket kap, melyeket megválaszol. 
-Első körben elképzelhető egy felmérés, mely a felhasználó jártasságát célozza meg az adott témakörben. 
-Ezután, legfőképp olyan kérdéseket fog kapni, melyeket egy 1-5-ig terjedő skálán meg tud válaszolni, vagy szám értéket ad meg, vagy olyan típusú kérdést kap, melyre érkezett válasz átalakítható szám értékké.
+A felhasználó megkezdi a kérdőívet valamilyen böngésző segítségével. <br>
+A kitöltés során különböző kérdéseket kap, melyeket megválaszol. <br>
+Első körben elképzelhető egy felmérés, mely a felhasználó jártasságát célozza meg az adott témakörben. <br>
+Ezután, legfőképp olyan kérdéseket fog kapni, melyeket egy 1-5-ig terjedő skálán meg tud válaszolni, vagy szám értéket ad meg, vagy olyan típusú kérdést kap, melyre érkezett válasz átalakítható szám értékké. <br>
