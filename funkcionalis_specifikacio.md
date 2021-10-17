@@ -17,6 +17,11 @@ annak függvényében, hogy a feldolgozott adatból később egy jövőbeli becs
 - Igényes kinézet, egyszerű kezelhetőség
 - Reszponzivitás, azaz különböző méretű eszközönként megfelelő megjelenés
 
+<h2>Igényelt üzleti folyamatok modellje</h2>
+Az üzleti folyamat modelljében látható, hogyan valósul meg az adatnak a feldolgozása a felhasználótól az automatizációs rendszeren keresztül.
+<img src="resources/uzleti_folyamat_modell.png">
+A modell kimutatja, hogy az adatbevitel űrlapon keresztül történik.
+Az adat az üzleti logika kapcsán feldolgozásra kerül adatbázis segítségével, továbbá elegendő adat mennyiség és minőség után egy becslést határoz meg a rendszer.
 
 
 <h2>Fogalomszótár</h2><br>
