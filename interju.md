@@ -1,0 +1,17 @@
+# Interjú dokumentáció
+- Webes reszponzív felület 
+- Adatbázisban tárolva (esetlegesen ha szükséges erőforrást tudunk igényelni)
+- Mérhető, gépi módon feldolgozható, statisztika
+- Szám értéket várunk válaszként
+- Felmérni a válaszadó jártasságát az adott területen pl. mennyire becsüli ki nyeri a világbajnokságot 4-5 kérdés
+- ?Ketté válaszatani magát a becslést és a jártasság felmérését
+- Egy-két max három soros kérdések
+- ?Képet betenni a kérdőívbe
+- 1-2-3-4-5 -> ezek közül tudjon a válaszadó választani (nagy részt)
+- (Google kérdőív ,szerintem, lehet minta)
+- Egy kérdésre egy szám érték érkezzen
+- Kérdés pl. mi lesz a bitcoint értéke egy hét múlva? -> erre írhasson be értéket a válaszadó -> ezt valahogy validálni kéne ,hogy a formázása helyes és egységes legyen
+- ?Egyszeres/többszörös kiválasztásos opció
+- ?Laravel
+- ?Ionic, eldöntendő miben készüljön maga a projekt
+- Nincs elvárás a kérdések mennyiségét illetően
