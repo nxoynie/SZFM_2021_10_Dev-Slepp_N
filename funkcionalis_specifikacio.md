@@ -9,6 +9,7 @@ Az ADMINOK és a LÁTOGATÓK különbözőképpen tudják majd használni a rend
 1.2. A felmérés statisztikáinak elérése.</br>
 1.2.1. A statisztikák megtekintése.</br>
 1.2.2. A statisztikák kimentése a használt eszközre.</br>
+1.2.3. A statisztikák elmentése és tárolása egy adatbázisban</br>
 1.3. A már létező kérdőívek törlése.</br>
 </br>
 2. LÁTOGATÓK:</br>
@@ -23,8 +24,18 @@ A rendszer céljai: </br>
 -adatok eltárolása</br>
 -eltárolt adatokhoz statisztika készítése</br>
 -könnyen használható felület biztosítása a látogatóknak</br>
+-számban kifejezett válaszok eltárolása</br>
+-reszponzív webdizájn</br>
 -egyszerű mód kérdőívek készítésére</br></br>
 Nem a rendszer céljai:</br>
 -a jövő pontos meghatározása</br>
 -akárkinek lehetőséget adni egy kérdőív elkészítéséhez</br>
 -a nem anonim kitöltők adatainak felhasználása</br>
+-szöveges választ elfogadni</br>
+
+
+<h2>Funkció – követelmény megfeleltetés</h2>
+A rendszer legfontosabb dolga az adatok eltárolása lesz, ezek egy adatbázisrendszerbe lesznek bevezetve.</br>
+Válasznak a látogató csak számot irhat be, ezt ellenőrizni foglyuk.</br>
+A statisztikákat nem az adminisztrátoroknak kell megcsinálniuk, ezt egy algoritmus csinálja majd meg.</br>
+A rendszer a weben keresztül lesz elérhető, fontos, hogy bármilyen böngészőben és eszközön elérhető legyen,</br> ezért reszponziv webdizájnt alkalmazunk az oldal megvalósításához.</br> 
