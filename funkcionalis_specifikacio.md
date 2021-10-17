@@ -41,6 +41,15 @@ Az üzleti folyamat modelljében látható, hogyan valósul meg az adatnak a fel
 A modell kimutatja, hogy az adatbevitel űrlapon keresztül történik.
 Az adat az üzleti logika kapcsán feldolgozásra kerül adatbázis segítségével, továbbá elegendő adat mennyiség és minőség után egy becslést határoz meg a rendszer.
 
+<h2>Képernyőterv<h2>
+
+<p>Light Mode:</p>
+
+![Képernyőterv az weblapról Light Mode-ban](resources/questionare_light_mode.png)
+
+<p>Dark Mode:</p>
+
+![Képernyőterv az weblapról Dark Mode-ban](resources/questionare_dark_mode.png)
 
 <h2>Fogalomszótár</h2><br>
 
