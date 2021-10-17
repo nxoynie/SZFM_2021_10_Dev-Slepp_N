@@ -68,6 +68,25 @@ Az adat az üzleti logika kapcsán feldolgozásra kerül adatbázis segítségé
 - Felhasználói felület - A rendszer azon elemei, mely közvetlenül a felhasználóval lépnek interakcióba, és barátságos megjelenéssel rendelkeznek.
 
 - Becslés - Egy téma kapcsán egy esemény vagy érték hozzávetőleges meghatározása.
+  
+ <h2>Használati esetek:</h2>
+A rendszer célja nem más, mint hogy az ADMINISZTRÁTOROK álltal létrehozozz kérdőíveket, az oldal LÁTOGATÓI tudják kitölteni, igy adatokat biztosítva a felméréshez.</br>
+Az ADMINOK és a LÁTOGATÓK különbözőképpen tudják majd használni a rendszert:</br>
+</br>
+1. ADMINOK:</br>
+1.1. Kérdőívek létrehozása a rendszerbe.</br>
+1.1.2. A kérdőívekhez egy teszt csatolása, amiből kiderül, hogy a kitöltőnek mennyi tudása van a felmérés témakörében.</br>
+1.1.3. A kérdőívekhez témában megfelelő kép feltöltése.</br>
+1.2. A felmérés statisztikáinak elérése.</br>
+1.2.1. A statisztikák megtekintése.</br>
+1.2.2. A statisztikák kimentése a használt eszközre.</br>
+1.2.3. A statisztikák elmentése és tárolása egy adatbázisban</br>
+1.3. A már létező kérdőívek törlése.</br>
+</br>
+2. LÁTOGATÓK:</br>
+2.1. Kérdőívek és az azt megelőző tesztek kitöltése.</br>
+2.2. Váltás éjszakai és nappali mód között.</br>
+2.3. A LÁTOGATÓ eldöntheti, hogy anonim szeretne e maradni, vagy a kitöltéséhez adja a nevét.</br></br>
 
 <h2>Forgatókönyvek</h2><br>
 
