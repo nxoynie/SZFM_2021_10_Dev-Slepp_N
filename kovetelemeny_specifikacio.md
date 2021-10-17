@@ -21,3 +21,19 @@ Az üzleti folyamatok kapcsán az alábbi követelmények szerepelnek: </br>
 - Igényes kinézet, egyszerű kezelhetőség
 - Reszponzivitás, azaz különböző méretű eszközönként megfelelő megjelenés
 
+<h2>Fogalomszótár</h2><br>
+
+- Felmérés - több felhasználó által megadott adat (kérdésekre válaszok) összesítése, összevetése.
+
+- Questionarre - Kérdőív, mely a felmérést megvalósítja, több kérdés feltétele során.
+
+- Reszponzivitás - Optimális megjelenítés a lehető legtöbb eszközön.
+
+- Adat - Olyan ismert vagy megfigyelt tény melyek számmal leirhatók, és számítástechnikai eszközökkel feldolgozhatóak, megjeleníthetők.
+
+- Adatfeldolgozás - Az a folyamat mely során az adat feldolgozásra kerül.
+
+- Automatizált - Egy olyan folyamat, mely emberi beavatkozást nem (vagy kevésbé) igényel.
+
+- Becslés - Egy téma kapcsán egy esemény vagy érték hozzávetőleges meghatározása.
+
