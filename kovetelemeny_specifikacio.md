@@ -1,3 +1,5 @@
+<h1>Követelmény specifikáció</h1>
+
 <h2><strong>Jelenlegi helyzet leírása</strong></h2>
 <p>Jelenleg a megrendelő egy <strong>papíralapú</strong> kérdőív rendszert alkamaz. Ennek <strong>hosszadalmas a kiértékelése, <br>
 rendezetten tartása</strong>. A jelenlegi rendszeren belül is <strong>léteznek előzetes tudást felmérő kérdések</strong>, 
@@ -12,8 +14,6 @@ kiértekelés</strong>. Mivel a rendszer papíralapú és a kiértékelése sem 
 kézzel vezetik egy papíralapú füzetbe. Illetve a kiérteklést is kézzel számolják. 
 <br>
 <strong>Ennek a rendszernek és kiértékelésnek szeretné a megrendelő az egyszerűsítését és automatizálását.</strong></p>
-
-<h1>Követelmény specifikáció</h1>
 
 <h2>Vágyálom rendszer leírása:</h2>
 Egy olyan rendszerre lenne szükségünk amellyel felmérést tudunk végezni egy adott témakörben. Amitől ez a rendszer különleges lenne számunkra az a reszponzív dizájn, egyértelmű barátságos felület és a könnyen kezelhető adatfeldolgozás.
