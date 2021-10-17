@@ -1,4 +1,4 @@
-<h2><strong>Jelenlegi helyzet leírása<strong></h2>
+<h2><strong>Jelenlegi helyzet leírása</strong></h2>
 <p>Jelenleg a megrendelő egy <strong>papíralapú</strong> kérdőív rendszert alkamaz. Ennek <strong>hosszadalmas a kiértékelése, <br>
 rendezetten tartása</strong>. A jelenlegi rendszeren belül is <strong>léteznek előzetes tudást felmérő kérdések</strong>, 
 <br>
