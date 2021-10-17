@@ -1,3 +1,5 @@
+<h1>Funckionális specifikáció</h1><br>
+
 <h2><strong>Jelenlegi helyzet leírása</strong></h2>
 <p>Jelenleg a megrendelő egy <strong>papíralapú</strong> kérdőív rendszert alkamaz. Ennek <strong>hosszadalmas a kiértékelése, <br>
 rendezetten tartása</strong>. A jelenlegi rendszeren belül is <strong>léteznek előzetes tudást felmérő kérdések</strong>, 
@@ -15,8 +17,6 @@ A jelenlegi rendszer funkcionalitás szempontjából elavult, nem fenntartható 
 <br>
 a jövőre nézve. 
 <strong>Ennek a rendszernek és kiértékelésnek szeretné a megrendelő az egyszerűsítését és automatizálását.</strong></p>
-
-<h1>Funckionális specifikáció</h1><br>
 
 <h2>Vágyálom rendszer leírása:</h2>
 Egy olyan rendszer szükséges számunkra amely kérdőív kitöltése kapcsán adatok feldolgozását teszi lehetővé.
