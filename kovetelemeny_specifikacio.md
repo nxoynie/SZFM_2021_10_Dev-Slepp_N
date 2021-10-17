@@ -35,5 +35,7 @@ Az üzleti folyamatok kapcsán az alábbi követelmények szerepelnek: </br>
 
 - Automatizált - Egy olyan folyamat, mely emberi beavatkozást nem (vagy kevésbé) igényel.
 
+- Felhasználói felület - A rendszer azon elemei, mely közvetlenül a felhasználóval lépnek interakcióba, és barátságos megjelenéssel rendelkeznek.
+
 - Becslés - Egy téma kapcsán egy esemény vagy érték hozzávetőleges meghatározása.
 
