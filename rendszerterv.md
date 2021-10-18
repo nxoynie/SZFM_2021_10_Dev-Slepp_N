@@ -16,9 +16,13 @@
 
 <h3>Tesztelés elvei:</h3>
 
-<p> - Tesztelés során szeretnénk meggyőződni arról, hogy az elkészült kérdőív megfelelően fogadja, feldolgozzza és tárolja a kapott válaszokat. <br>
--  Szeretnénk meggyőződni arról ,hogy minden alap, mindennapi használatban lévő gyakori eszközözön(telefon, laptop, számítógép) modellen, operációs rendszeren, böngészőben megfelelően funkcionál, reszponzív és felhasználóbarát az elkészült kérdőív. <br>
-- Fontos, hogy az elkészült projekt teljesítse a reszponzivitás elveit és egyszerűen használható legyen, ezzel garantálva azt ,hogy a kérdőívet továbbra is a népesség széles köre kitöltheti, így különböző rétegekből nyerhetünk adatokat.</p>
+<p>
+   <ul>
+  <li>Tesztelés során szeretnénk meggyőződni arról, hogy az elkészült kérdőív megfelelően fogadja, feldolgozzza és tárolja a kapott válaszokat. </li>
+  <li>Szeretnénk meggyőződni arról ,hogy minden alap, mindennapi használatban lévő gyakori eszközözön(telefon, laptop, számítógép) modellen, operációs rendszeren, böngészőben megfelelően funkcionál, reszponzív és felhasználóbarát az elkészült kérdőív. </li>
+  <li>Fontos, hogy az elkészült projekt teljesítse a reszponzivitás elveit és egyszerűen használható legyen, ezzel garantálva azt ,hogy a kérdőívet továbbra is a népesség széles köre kitöltheti, így különböző rétegekből nyerhetünk adatokat. </li>
+</ul>      
+</p>
 
 <h3>Tesztelés folyamat</h3>
 <p><strong>- Manuális tesztelés</strong></p>
@@ -58,3 +62,14 @@
 </p>
 <h3>Sikeres teszt kritériumai:</h3>
 <p>- A kérdőív reszponzív, felhasználóbarát az összes tesztelt eszközön, megfelelően dolgozza fel és tárolja az adatokat minden esetben. Illetve átmegy a Unit teszteken.</p>
+
+<h3>Karbantartási terv</h3>
+<p>
+   <ul>
+   <li>A dependenciák időszakos ellenőrzése, hogy megakadályozzuk az adat kiszivárgást és biztosítsuk a rendszer biztonságosságát. </li>
+   <li>Az adatbázisban tárolt adatok meglétének időszakos ellenőrzése, elkerülve azt az eshetőséget ,hogy régebbi adatok eltűnjenek esetlegesen erőforrás hiánya miatt. </li>
+   <li>Reszponzivitás időszakos ellenőrzése Major Software Update esetén. </li>
+   <li>Meglévő technológiák újabbakra cserélése igény és szükség esetén. </li>
+   <li>Kérdések időszakos cseréje/bővítése, újabb témában való válaszgyűjtés igényének esetén. </li>
+   </ul>
+</p>
