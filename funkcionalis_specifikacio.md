@@ -1,3 +1,5 @@
+<h1>Funckionális specifikáció</h1><br>
+
 <h2><strong>Jelenlegi helyzet leírása</strong></h2>
 <p>Jelenleg a megrendelő egy <strong>papíralapú</strong> kérdőív rendszert alkamaz. Ennek <strong>hosszadalmas a kiértékelése, <br>
 rendezetten tartása</strong>. A jelenlegi rendszeren belül is <strong>léteznek előzetes tudást felmérő kérdések</strong>, 
@@ -15,8 +17,6 @@ A jelenlegi rendszer funkcionalitás szempontjából elavult, nem fenntartható 
 <br>
 a jövőre nézve. 
 <strong>Ennek a rendszernek és kiértékelésnek szeretné a megrendelő az egyszerűsítését és automatizálását.</strong></p>
-
-<h1>Funckionális specifikáció</h1><br>
 
 <h2>Vágyálom rendszer leírása:</h2>
 Egy olyan rendszer szükséges számunkra amely kérdőív kitöltése kapcsán adatok feldolgozását teszi lehetővé.
@@ -41,6 +41,15 @@ Az üzleti folyamat modelljében látható, hogyan valósul meg az adatnak a fel
 A modell kimutatja, hogy az adatbevitel űrlapon keresztül történik.
 Az adat az üzleti logika kapcsán feldolgozásra kerül adatbázis segítségével, továbbá elegendő adat mennyiség és minőség után egy becslést határoz meg a rendszer.
 
+<h2>Képernyőterv<h2>
+
+<p>Light Mode:</p>
+
+![Képernyőterv az weblapról Light Mode-ban](resources/questionare_light_mode.png)
+
+<p>Dark Mode:</p>
+
+![Képernyőterv az weblapról Dark Mode-ban](resources/questionare_dark_mode.png)
 
 <h2>Fogalomszótár</h2><br>
 
@@ -59,6 +68,47 @@ Az adat az üzleti logika kapcsán feldolgozásra kerül adatbázis segítségé
 - Felhasználói felület - A rendszer azon elemei, mely közvetlenül a felhasználóval lépnek interakcióba, és barátságos megjelenéssel rendelkeznek.
 
 - Becslés - Egy téma kapcsán egy esemény vagy érték hozzávetőleges meghatározása.
+  
+ <h2>Használati esetek:</h2>
+A rendszer célja nem más, mint hogy az ADMINISZTRÁTOROK álltal létrehozozz kérdőíveket, az oldal LÁTOGATÓI tudják kitölteni, igy adatokat biztosítva a felméréshez.</br>
+Az ADMINOK és a LÁTOGATÓK különbözőképpen tudják majd használni a rendszert:</br>
+</br>
+1. ADMINOK:</br>
+1.1. Kérdőívek létrehozása a rendszerbe.</br>
+1.1.2. A kérdőívekhez egy teszt csatolása, amiből kiderül, hogy a kitöltőnek mennyi tudása van a felmérés témakörében.</br>
+1.1.3. A kérdőívekhez témában megfelelő kép feltöltése.</br>
+1.2. A felmérés statisztikáinak elérése.</br>
+1.2.1. A statisztikák megtekintése.</br>
+1.2.2. A statisztikák kimentése a használt eszközre.</br>
+1.2.3. A statisztikák elmentése és tárolása egy adatbázisban</br>
+1.3. A már létező kérdőívek törlése.</br>
+</br>
+2. LÁTOGATÓK:</br>
+2.1. Kérdőívek és az azt megelőző tesztek kitöltése.</br>
+2.2. Váltás éjszakai és nappali mód között.</br>
+2.3. A LÁTOGATÓ eldöntheti, hogy anonim szeretne e maradni, vagy a kitöltéséhez adja a nevét.</br></br>
+
+<h2>Funkció – követelmény megfeleltetés</h2>
+A rendszer legfontosabb dolga az adatok eltárolása lesz, ezek egy adatbázisrendszerbe lesznek bevezetve.</br>
+Válasznak a látogató csak számot irhat be, ezt ellenőrizni foglyuk.</br>
+A statisztikákat nem az adminisztrátoroknak kell megcsinálniuk, ezt egy algoritmus csinálja majd meg.</br>
+A rendszer a weben keresztül lesz elérhető, fontos, hogy bármilyen böngészőben és eszközön elérhető legyen,</br> ezért reszponziv webdizájnt alkalmazunk az oldal megvalósításához.</br> 
+
+<h2>A rendszer céljai és nem céljai</h2>
+A rendszer céljai: </br>
+-nagy mennyiségű minta gyűjtése</br>
+-becslés megadása a jövőre tekintve egy adott témában</br>
+-adatok eltárolása</br>
+-eltárolt adatokhoz statisztika készítése</br>
+-könnyen használható felület biztosítása a látogatóknak</br>
+-számban kifejezett válaszok eltárolása</br>
+-reszponzív webdizájn</br>
+-egyszerű mód kérdőívek készítésére</br></br>
+Nem a rendszer céljai:</br>
+-a jövő pontos meghatározása</br>
+-akárkinek lehetőséget adni egy kérdőív elkészítéséhez</br>
+-a nem anonim kitöltők adatainak felhasználása</br>
+-szöveges választ elfogadni</br>
 
 <h2>Forgatókönyvek</h2><br>
 

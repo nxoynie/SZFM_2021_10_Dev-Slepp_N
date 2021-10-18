@@ -1,3 +1,5 @@
+<h1>Követelmény specifikáció</h1>
+
 <h2><strong>Jelenlegi helyzet leírása</strong></h2>
 <p>Jelenleg a megrendelő egy <strong>papíralapú</strong> kérdőív rendszert alkamaz. Ennek <strong>hosszadalmas a kiértékelése, <br>
 rendezetten tartása</strong>. A jelenlegi rendszeren belül is <strong>léteznek előzetes tudást felmérő kérdések</strong>, 
@@ -13,8 +15,6 @@ kézzel vezetik egy papíralapú füzetbe. Illetve a kiérteklést is kézzel sz
 <br>
 <strong>Ennek a rendszernek és kiértékelésnek szeretné a megrendelő az egyszerűsítését és automatizálását.</strong></p>
 
-<h1>Követelmény specifikáció</h1>
-
 <h2>Vágyálom rendszer leírása:</h2>
 Egy olyan rendszerre lenne szükségünk amellyel felmérést tudunk végezni egy adott témakörben. Amitől ez a rendszer különleges lenne számunkra az a reszponzív dizájn, egyértelmű barátságos felület és a könnyen kezelhető adatfeldolgozás.
 Egy olyan Questionarre program lenne számunkra szükséges amellyel felmérhetünk, adatot feldolgozhatunk valamint statisztikát állítsunk ki egy felmérés kapcsán.
@@ -26,6 +26,28 @@ Az üzleti folyamatok kapcsán az alábbi követelmények szerepelnek: </br>
 2, Adatbázisban való tárolás</br>
 3, Jövőbeli becslés</br>
 4, A becslés és jártasság felmérésének külön súlyozása </br>
+
+<h2>Jelenlegi üzleti folyamatok modellje</h2>
+Jelenleg a munka folyamata 5 részre bontható fel:</br>
+1.Kérdőívek elkészítése</br>
+1.1. Papír megvásárlása</br>
+1.2. Kérdőív kérdéseinek megszerkesztése</br>
+1.3. Kérdőív kinyomtatása</br>
+2.Kérdőívek szétosztása</br>
+2.1. Utcákon való szétosztás</br>
+2.2. Kérdőívek postaládában való elhelyezése</br>
+3.Kérdőívek begyűjtése</br>
+3.1. Az utcákon szétosztott és kitöltött kérdőívek visszavitele a kiértékelésre</br>
+3.2. A postán feladott kitöltött kérdőívek átvétele</br>
+4.Kérdőívek kielemzése</br>
+4.1. Kérdőívek szétosztása az alkalmazottak között</br>
+4.2. Válaszok feljegyzése, kiértékelése</br>
+4.3. Kiértékelések összegyűjtése</br>
+5.Statisztikák létrehozása</br>
+5.1. Kiértékelt válaszok rendezése</br>
+5.2. Megfelelő statisztika elkészítése</br>
+5.3. Ellenőrzés</br>
+5.4. Statisztika leadása a megfelelő helyre</br>
 
 <h2>A rendszerre vonatkozó szabályok leírása</h2><br>
 
