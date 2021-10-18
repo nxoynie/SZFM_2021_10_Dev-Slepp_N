@@ -1,5 +1,19 @@
 <h1>Rendszerterv</h1>
+
+<h2>A rendszer célja</h2>
+<p><strong>Az általunk létrehozni kívánt rendszer célja, hogy az Önök elvárásait elégítse ki a lehető legnagyobb mértékben. Ennek a rendszernek a céljai a következők:
+   </strong>
+  <ul>
+   <li>Karbantarhatóság és adatok egyszerű feldolgozásának biztosítása.</li>
+   <li>Helyes, pontos működés biztosítása.</li>
+   <li>Megjelenése minden eszközön használható és reszponzív.</li>
+   <li>Az utómunka (ez esetben a válaszok rögzítése, feldolgozása) meggyorsítása, egyszerűvé, automatizáltáttá tétele.</li>
+   <li>Egy olyan felület biztosítása melyen található, Világos illetve Sötét mód, mely nagyítása lehetséges, biztosítva a felhasználók számára a kellemes és egyszerű kitöltést.</li>
+   <li>A jelenlegi papír alapú rendszer teljes felváltása.</li>
+</ul></p>
+
 <h2>Tesztterv</h2>
+
 <h3>Tesztelés elvei:</h3>
 
 <p> - Tesztelés során szeretnénk meggyőződni arról, hogy az elkészült kérdőív megfelelően fogadja, feldolgozzza és tárolja a kapott válaszokat. <br>
