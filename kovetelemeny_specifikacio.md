@@ -1,3 +1,4 @@
+
 <h1>Követelmény specifikáció</h1>
 
 <h2><strong>Jelenlegi helyzet leírása</strong></h2>
@@ -47,6 +48,7 @@ Jelenleg a munka folyamata 5 részre bontható fel:</br>
 5.1. Kiértékelt válaszok rendezése</br>
 5.2. Megfelelő statisztika elkészítése</br>
 5.3. Ellenőrzés</br>
+
 5.4. Statisztika leadása a megfelelő helyre</br>
 
 <h2>A rendszerre vonatkozó szabályok leírása</h2><br>
@@ -87,3 +89,6 @@ Jelenleg a munka folyamata 5 részre bontható fel:</br>
 |-| K05| Felméri a válaszadó jártasságát a témában|-|Hasonlóan a jelenlegi papír alapú rendszerhez, szeretnénk implementálni olyan kérdéseket a predikció előtt ami felméri ,hogy a válaszadó tulajdonképpen mennyire jártas-e a témában. Ezzel szeretnénk kiszűrni a szimpla tippeket a valóságos spekulációk közül.|
 |-| K06| Rövid maximum két, három soros kérdések|-|A figyelem fenntartása érdekében maximum két, három soros kérdések szerepelhet a kérdőívben.|
 |-| K07| Webes reszponzív dizájn|-|Hogy továbbra is a populáció nagy százalékának lehetősége legyen kitölteni a kérdőívet, hasonlóan a jelenlegi papíralapú rendszerhez, ezért a weboldal dizájnjának reszponzívnak kell lennie és megfelelően megjelennie és használhatóank lennei a jelenleg használt legtöbb eszközön(számítógépek, telefonok, tableket) illetve modellen.|
+
+5.4. Statisztika leadása a megfelelő helyre</br>
+
