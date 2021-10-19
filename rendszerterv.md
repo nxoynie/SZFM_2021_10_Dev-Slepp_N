@@ -73,3 +73,21 @@
    <li>Kérdések időszakos cseréje/bővítése, újabb témában való válaszgyűjtés igényének esetén. </li>
    </ul>
 </p>
+
+<h3>A rendszer követelményei</h3>
+
+A rendszer követelményei javarészt az olyan követelményeket foglal magába, melyek megvalósítását megcélozza a rendszerterv.
+Ezek a következők:
+
+|Modul| ID | Név |V.| Kifejtés|
+|---|---|---|---|---|
+|-| K01| Adatbázisban tárolás|-|A rendszer a kapott válaszokat egy adatbázisban eltárolja.|
+|-| K02| Szám érték elvárása válaszként|-|A kérdésekre válaszként <strong>CSAK</strong> szám értéket fogad el.|
+|-| K03| Tizedes számok helyes bevitele|-|A rendszer a kérdésre adott esetleges tizedes számot helyesen kezeli (pont-vessző probléma).|
+|-| K04| Mérhető, gépi módon feldolgozható statisztika|-|Az adatbázisban való tárolás olyan formában történik melyből egyszerűen, <strong>GÉPI</strong> módon készíthetőek statisztikák, kimutatások.|
+|-| K05| Egyszerűen kezelhető rendszer|-|A kérdőív egyszerűen kezelhető az end-user számára.|
+|-| K06| Felhasználó jártasságának felmérése a témában|-|Hasonlóan a jelenlegi papír alapú rendszerhez, szeretnénk implementálni olyan kérdéseket a predikció előtt ami felméri ,hogy a válaszadó tulajdonképpen mennyire jártas-e a témában. Ezzel szeretnénk kiszűrni a szimpla tippeket a valóságos spekulációk közül.|
+|-| K07| Rövid kérdések|-|A figyelem fenntartása érdekében maximum két, három soros kérdések szerepelhet a kérdőívben.|
+|-| K08| Webes reszponzív dizájn megléte|-|Hogy továbbra is a populáció nagy százalékának lehetősége legyen kitölteni a kérdőívet, hasonlóan a jelenlegi papíralapú rendszerhez, ezért a weboldal dizájnjának reszponzívnak kell lennie és megfelelően megjelennie és használhatónak lennie a jelenleg használt legtöbb eszközön(számítógépek, telefonok, tabletek) illetve modellen.|
+|-| K09| A rendszer egy kérdőívből álljon|-|A rendszer célja továbbra is egyértelműen az adatgyűjtés legyen, ezért egy egyszerűen kezelhető barátságos kérdőívből kell állnia.|
+|-| K10| Megfelelő súlyozás|-|A kapott válaszokat megfelelő súlyozással kell feldolgoznunk, mely függ a válaszadó előzetes tudásától, hogy megfelelő és valós statisztikát kaphassunk.|
