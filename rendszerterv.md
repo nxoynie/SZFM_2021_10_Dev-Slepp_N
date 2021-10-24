@@ -32,3 +32,38 @@ A rendszer könnyen bõvíthetõ extra funkciókkal.<br>
 Biztonsági funkciókra nincs szükség.</p>
 
 ![Képernyőterv az weblapról Dark Mode-ban](resources/architectural_plan.png)
+
+<h2>Fizikai környezet</h2>
+<ul>
+<li> Az kérdőív a könnyű hozzáférhetőség és gyors működés érdekében a legtöbb modern böngészőben működni fog, így a legtöbb grafikus felülettel rendelkező operációs rendszer alatti működés alapvető.</li>
+<ul>
+    <li>Windows környezet alatt</li>
+    <li>Linux környezet alatt</li>
+    <li>macOS környezet alatt</li>
+    <li>Android környezet alatt</li>
+    <li>iOS környezet alatt</li>
+    </ul>
+<li>Ajánlott böngészők:</li>
+    <ul>
+    <li>Google Chrome</li> 
+    <li>Mozilla Firefox</li>
+    <li>Microsoft Edge</li>
+    <li>Safari</li>
+    <li>Opera</li>
+    </ul>
+<li>Ajánlott Architektúrák:</li>
+    <ul>
+    <li>ARM</li> 
+    <li>ARM64</li>
+    <li>x64</li>
+    <li>x86</li>
+    </ul>
+<li> Csak saját komponenseket használunk fel</li>
+<li>Fejlesztői eszközök:</li>
+<ul>
+    <li>Visual Studio</li>
+    <li>Intellij</li>
+    <li>Github</li>
+    <li>Trello</li>
+    </ul>
+</ul>
