@@ -24,3 +24,11 @@ Szatmári Boldizsár: Csapat</p>
 4. UI kivitelezése<br>
 5. Funkciók integrálása<br>
 6. UI, Funkciók tesztelése</p>
+
+<h2>Architekturális terv:</h2>
+<p>A projekt során egy 3-rétegű Ionic framework segítségével megírt PHP webapplikáció fog megszületni.<br>
+Az applikáció adatbázisa MySQL alapú.<br>
+A rendszer könnyen bõvíthetõ extra funkciókkal.<br>
+Biztonsági funkciókra nincs szükség.</p>
+
+![Képernyőterv az weblapról Dark Mode-ban](resources/architectural_plan.png)
