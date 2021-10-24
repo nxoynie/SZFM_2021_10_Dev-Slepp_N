@@ -160,7 +160,20 @@ Php kód lesz azért is a felelős, hogy a kérdőív kitöltése közben a kit�
 A kitöltés elvégzése után az adatbázisba továbbitjuk a kinyert információkat.</br>
 Amikor szükségünk lesz egy statisztikára, az adatbázisból hivjuk meg az adatokat, és egy algoritmussal elvégeztetjük a statisztikák elkészítését.</br>
 A statisztikákat megjelenitjük az oldalon és lehetőséget kinálunk ezek kimentésére.</br> 
-<h3>A rendszer követelményei</h3>
+
+<h3>Absztrakt domain modell</h3>
+
+Alkalmazásunk olyan részekből fog állni, melyek PHP, HTML és CSS részeket foglalnak magukba.
+Megvalósításra egy olyan rétegelt felépítésre gondoltunk, mely a következőket valósítja meg:
+<ul>
+   <li>Frontend felület, melyet a felhasználó lát és ezzel interakcionál</li>
+   <li>Backend felület, mely az adatbázissal való kapcsolatot biztosítja </li>
+</ul>
+Alkalmazásunk a felhasználó által megadott válaszokat egy form-on keresztül fogja megtenni.
+Ennek validálásáért egy olyan komponens fog felelni, mely figyeli a beírt adat helyességét és validitását.
+<img src="resources/adm.png">
+
+<h2>A rendszer követelményei</h2>
 
 A rendszer követelményei javarészt az olyan követelményeket foglal magába, melyek megvalósítását megcélozza a rendszerterv.
 Ezek a következők:
