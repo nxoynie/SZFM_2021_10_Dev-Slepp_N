@@ -32,11 +32,13 @@
    <li>Tesztelés különböző operációs rendszereken.</li>
 </ul>
 <p><strong>- Unit tesztelés</strong></p>
+<p><strong>- Penetration teszt</strong></p>
 
 <h3>Tesztelés kontrollja</h3>
 <p>A kérdőív akkor megy át a tesztelés teljes fázisán, ha:
   <ul>
    <li>Átmegy a Unit teszteken</li>
+     <li> Átmegy a Penetration teszten</li>
    <li>Megjelenése minden eszközön használható és reszponzív.</li>
     <li>A válaszok eltárolása minden eszközön <strong>HELYESEN</strong> megtörténik.</li>
 </ul>
