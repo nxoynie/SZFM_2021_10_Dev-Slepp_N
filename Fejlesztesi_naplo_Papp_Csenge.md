@@ -21,3 +21,13 @@ program. Azt szerettük volna ,ha mindenki abban fejleszhetne amiben a legkénye
 - [https://ej2.syncfusion.com/home/](https://ej2.syncfusion.com/home/)
 - [https://www.php.net/manual/en/](https://www.php.net/manual/en/)
 - [https://dev.mysql.com/doc/refman/8.0/en/preface.html](https://dev.mysql.com/doc/refman/8.0/en/preface.html)
+
+## *Kérdésbank gyűjtése*
+
+### *Források:*
+
+- [https://www.thebitcoinexam.com/](https://www.thebitcoinexam.com/)
+- [https://www.welovequizzes.com/weather-and-climate-quiz-questions-and-answers/](https://www.welovequizzes.com/weather-and-climate-quiz-questions-and-answers/)
+- [https://www.formula1.com/en/latest/article.test-your-knowledge-of-the-season-just-gone-its-the-big-formula-1-quiz-of.7liLmgnZWyWQRu3Hrtyg84.html](https://www.formula1.com/en/latest/article.test-your-knowledge-of-the-season-just-gone-its-the-big-formula-1-quiz-of.7liLmgnZWyWQRu3Hrtyg84.html)
+- [https://grizly.com/quizzes/world-cup-history-quiz](https://grizly.com/quizzes/world-cup-history-quiz)
+- [https://www.hopkinsmedicine.org/health/conditions-and-diseases/test-your-knowledge-covid-19](https://www.hopkinsmedicine.org/health/conditions-and-diseases/test-your-knowledge-covid-19)
