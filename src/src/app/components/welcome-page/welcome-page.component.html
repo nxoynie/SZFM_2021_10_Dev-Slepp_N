@@ -1,0 +1,15 @@
+<ng-template [ngIf]="welcome" [ngIfElse]="loading">
+    <app-header text='Welcome to Questionnaire!'></app-header>
+    <div class="container">
+        <p>Üdvözöllek a Questionnaire webalkalmazásunkban!</p>
+        <p>Néhány kérdést fogunk feltenni hogy felmérjük a jártasságod a témakörben.</p>
+        <p>Ez a felmérés ..........</p>
+        <p>Amennyiben készenállsz, nyomj a <strong>lenti</strong> gombra!</p>
+        <button mat-raised-button (click)="goNext()">Tovább</button>
+    </div>
+</ng-template>
+<ng-template #loading class="ringcontainer">
+    <div class="lds-ring">
+        <div></div><div></div><div></div><div></div>
+    </div>
+</ng-template>
