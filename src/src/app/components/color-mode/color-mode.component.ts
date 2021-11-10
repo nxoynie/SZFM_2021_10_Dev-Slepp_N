@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularMaterialModule } from '../material-module';
+import { AngularMaterialModule } from '../../material-module';
 
 @Component({
   selector: 'app-color-mode',
@@ -8,9 +8,16 @@ import { AngularMaterialModule } from '../material-module';
 })
 export class ColorModeComponent implements OnInit {
 
+  // is the theme already dark
+  dark = false
+
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+      // check if the theme is already dark, if it is, we check the darkmode toggle by default
+      if(document.body.getAttribute('color-theme') == 'dark')
+          this.dark = true
+  }
 
   change(event) {
     

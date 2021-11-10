@@ -1,11 +1,15 @@
 .container {
     padding: 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--ion-text-color);
 }
 .text {
     color: var(--ion-text-color);
-    margin: 0 !important;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+app-color-mode {
+    position: absolute;
+    right: 10px;
 }
