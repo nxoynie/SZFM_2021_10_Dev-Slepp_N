@@ -24,7 +24,17 @@ A helyes válaszok dőlt betűvel jelennek meg.
 
 ## Mi az a Bitcoin bányászat?
 
-- Az a folyamat amely által az adat korábbi tranzakció blokkokból hashelt és arra használt ,hogy vegyen vagy adjon el Bitcoint.
+- Az a folyamat amely által az adat korábbi tranzakció blokkokból hashelt és arra használt ,hogy vegyenek vagy adjanak el Bitcoint.
 - Az a folyamat amit arra használnak ,hogy csökkentsék a Bitcoin tőzsdéjét.
 - *Az a Bitcoin feldolgozási akció ahol feljegyzik őket a Bitcoin főkönyvbe.*
 - Az a folyamat ani megakadályozza az új funckiók implementálást a Bitcoin protokollba.
+
+## Mi volt az első termék, melyet Bitcoin-nal fizettek ki 2010-ben?
+
+- kard
+- *pizza*
+- koncertjegy
+- számítógépes játék
+
+## **Végül a predikció kérdés:**
+## Jelenleg egy darab Bitcoin egyenértékű **20 794 039,98** magyar forrinttal, mit gondolsz, 10 éven belül lehetséges-e ,hogy munkahelyen Bitcoin-ba kapják az emberek a fizetést?(1-5 skála: 1: nem valószínű 2:talán 3:neutrális 4:elképzelhető 5:elég sok esély látok rá)
