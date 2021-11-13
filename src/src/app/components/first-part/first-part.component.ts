@@ -1,3 +1,4 @@
+import { DataService } from './../../services/data-service.service';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { MatSelectionListChange } from '@angular/material/list';
 import { Router } from '@angular/router';
@@ -9,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class FirstPartComponent implements OnInit {
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private dataService: DataService) {}
 
   done =  false
 
@@ -74,7 +75,6 @@ export class FirstPartComponent implements OnInit {
   ngOnInit() {}
 
   onChange(event: MatSelectionListChange, index) {
-    console.log(event.source._value[0], index)
     let val = event.source._value[0]
     
     switch (index) {
@@ -102,11 +102,13 @@ export class FirstPartComponent implements OnInit {
   onSubmit() {
     console.log(this.result)
     this.done = true
+    this.dataService.setPartOne(this.result)
     setTimeout(() => 
     {
       this.router.navigate(['/part-two'], { replaceUrl: true });
     },
     1500)
+
   }
 
   all_answered() {
