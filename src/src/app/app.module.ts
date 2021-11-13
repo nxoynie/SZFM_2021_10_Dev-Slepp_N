@@ -1,3 +1,4 @@
+import { SecondPartComponent } from './components/second-part/second-part.component';
 import { FirstPartComponent } from './components/first-part/first-part.component';
 import { WelcomePageComponent } from './components/welcome-page/welcome-page.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -12,12 +13,13 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, ColorModeComponent, HeaderComponent, WelcomePageComponent, FirstPartComponent],
+  declarations: [AppComponent, ColorModeComponent, HeaderComponent, WelcomePageComponent, FirstPartComponent, SecondPartComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AngularMaterialModule, BrowserAnimationsModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AngularMaterialModule, BrowserAnimationsModule, FormsModule, ReactiveFormsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent, FirstPartComponent],
 })
 export class AppModule {}
