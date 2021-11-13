@@ -9,14 +9,13 @@ import { DataService } from 'src/app/services/data-service.service';
 export class SecondPartComponent implements OnInit {
   
   result = {
-    predikcios_ertek: 4
+    predikcios_ertek: 0
   }
 
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
     console.log(this.dataService.result)
-    this.dataService.setPartTwo(this.result)
   }
 
 }

@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, JsonpClientBackend } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class DataService {
 
   // URL
-  private api_url = "http://localhost/questionnare/api/interface.php"
+  private api_url = "http://localhost/api/interface.php"
 
   result = {
     elso_ertek: 0,
@@ -34,6 +34,14 @@ export class DataService {
   }
 
   sendData(result) {
-    this.http.post(this.api_url, result).subscribe(response => console.log(response))
+    this.http.post(this.api_url, JSON.stringify(result), {  
+      headers : {
+        'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
+      }}
+    ).subscribe(response => console.log(response))
+  }
+
+  getData(result) {
+    //TODO
   }
 }
