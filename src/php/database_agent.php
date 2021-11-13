@@ -8,12 +8,8 @@
             - insert_the_data(JSON objektum) -> A megadott JSON objektumot az adatbazishoz adja, visszateresi ertek: 1-siker, -1-kudarc 
 
             *JSON objektum = {
-                                "suly" = x
-                                "elso_ertek" = x
-                                "masodik_ertek" = x
-                                "harmadik_ertek" = x
-                                "negyedik_ertek" = x
-                                "otodik_ertek" = x
+                                "suly" = double
+                                "predikcio" = int(1-5)
                             }
 
 
@@ -35,24 +31,18 @@ function querry_the_data(){
 }
 
 function insert_the_data($jsonobj){
-    $data = json_decode($jsonobj, true);
-
-    $suly = $data['suly'];
-    $elso_ertek = $data['elso_ertek'];
-    $masodik_ertek = $data['masodik_ertek'];
-    $harmadik_ertek = $data['harmadik_ertek'];
-    $negyedik_ertek = $data['negyedik_ertek'];
-    $otodik_ertek = $data['otodik_ertek'];
+    $data = json_decode($jsonobj);
+    $suly = $data->suly;
+    $predikcios_ertek = $data->predikcios_ertek;
 
   
     $datum = date("Y/m/d H:i:s");
 
     $conn = connectdb();
  
-    $stmt = $conn->prepare("INSERT INTO kerdoivek (suly, elso_ertek, masodik_ertek, harmadik_ertek,
-    negyedik_ertek, otodik_ertek, datum) 
-    VALUES (?,?,?,?,?,?,?)");
-    $stmt->bind_param("diiiiis", $suly,$elso_ertek,$masodik_ertek,$harmadik_ertek,$negyedik_ertek,$otodik_ertek,$datum);
+    $stmt = $conn->prepare("INSERT INTO kerdoivek (suly, predikcio, datum) 
+    VALUES (?,?,?)");
+    $stmt->bind_param("dis", $suly,$predikcios_ertek,$datum);
     $stmt->execute();
     
     $flag = $conn-> affected_rows;
