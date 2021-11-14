@@ -1,6 +1,16 @@
 
-<h1>Rendszerterv</h1>
 
+<h1>Rendszerterv</h1>
+<h2>Telepítési terv</h2>
+Az alkalmazásunkat a felhasználók egy webes felületen érhetik majd el.</br>
+A felhasználóknak nem szükséges semmi mást feltelepíteni egy használni kívánt böngészőn kívül.</br>
+Ez a böngésző lehet:</br>
+-Google Chrome</br>
+-Opera</br>
+-Safari</br>
+-Firefox</br>
+-Microsoft Edge</br>
+</br>
 <h2>A rendszer célja</h2>
 <p><strong>Az általunk létrehozni kívánt rendszer célja, hogy az Önök elvárásait elégítse ki a lehető legnagyobb mértékben. Ennek a rendszernek a céljai a következők:
    </strong>
@@ -159,6 +169,9 @@ Azt, hogy a teszten elegendő pontszámot ért e el a kitöltő, egy php kóddal
 Php kód lesz azért is a felelős, hogy a kérdőív kitöltése közben a kitöltő ne tudjon rossz választ adni (számok helyett betűk, stb.).</br>
 A kitöltés elvégzése után az adatbázisba továbbitjuk a kinyert információkat.</br>
 Amikor szükségünk lesz egy statisztikára, az adatbázisból hivjuk meg az adatokat, és egy algoritmussal elvégeztetjük a statisztikák elkészítését.</br>
+
+A statisztikákat megjelenitjük az oldalon és lehetőséget kinálunk ezek kimentésére.</br> 
+
 A statisztikákat megjelenitjük az oldalon és lehetőséget kinálunk ezek kimentésére.</br> 
 
 <h3>Absztrakt domain modell</h3>
@@ -190,3 +203,4 @@ Ezek a következők:
 |-| K08| Webes reszponzív dizájn megléte|-|Hogy továbbra is a populáció nagy százalékának lehetősége legyen kitölteni a kérdőívet, hasonlóan a jelenlegi papíralapú rendszerhez, ezért a weboldal dizájnjának reszponzívnak kell lennie és megfelelően megjelennie és használhatónak lennie a jelenleg használt legtöbb eszközön(számítógépek, telefonok, tabletek) illetve modellen.|
 |-| K09| A rendszer egy kérdőívből álljon|-|A rendszer célja továbbra is egyértelműen az adatgyűjtés legyen, ezért egy egyszerűen kezelhető barátságos kérdőívből kell állnia.|
 |-| K10| Megfelelő súlyozás|-|A kapott válaszokat megfelelő súlyozással kell feldolgoznunk, mely függ a válaszadó előzetes tudásától, hogy megfelelő és valós statisztikát kaphassunk.|
+
