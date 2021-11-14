@@ -12,9 +12,10 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ThankyouPageComponent } from './components/thankyou-page/thankyou-page.component';
 
 @NgModule({
-  declarations: [AppComponent, ColorModeComponent, HeaderComponent, WelcomePageComponent, FirstPartComponent],
+  declarations: [AppComponent, ColorModeComponent, HeaderComponent, WelcomePageComponent, FirstPartComponent, ThankyouPageComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AngularMaterialModule, BrowserAnimationsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
