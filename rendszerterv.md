@@ -1,6 +1,14 @@
-
 <h1>Rendszerterv</h1>
-
+<h2>Telepítési terv</h2>
+Az alkalmazásunkat a felhasználók egy webes felületen érhetik majd el.</br>
+A felhasználóknak nem szükséges semmi mást feltelepíteni egy használni kívánt böngészőn kívül.</br>
+Ez a böngésző lehet:</br>
+-Google Chrome</br>
+-Opera</br>
+-Safari</br>
+-Firefox</br>
+-Microsoft Edge</br>
+</br>
 <h2>A rendszer célja</h2>
 <p><strong>Az általunk létrehozni kívánt rendszer célja, hogy az Önök elvárásait elégítse ki a lehető legnagyobb mértékben. Ennek a rendszernek a céljai a következők:
    </strong>
@@ -12,6 +20,76 @@
    <li>Egy olyan felület biztosítása melyen található, Világos illetve Sötét mód, mely nagyítása lehetséges, biztosítva a felhasználók számára a kellemes és egyszerű kitöltést.</li>
    <li>A jelenlegi papír alapú rendszer teljes felváltása.</li>
 </ul></p>
+<h2>Projekt terv:</h2>
+
+
+<h3>Projektszerepkörök, felelősségek:</h3>
+<h4>Scrum Master:</h4>
+<p>Felügyeli a folyamat fenntartását, segíti a csapatot probléma esetén. Kezeli a projekt main ágát.<br>
+Felügyeli, hogy a csapattagok betartják-e a Scrum szabályokat, tartják-e a sprint határidejét.</p>
+<h4>Csapat:</h4>
+<p>Felelősek azért, hogy az aktuális sprintre bevállalt feladatokat elvégezzék.</p>
+
+<h3>Projektmunkások és szerepköreik:</h3>
+<p>Papp Csenge: Scrum Master, Csapat<br>
+Zselenák Flórián: Csapat<br>
+Hosszú Szilárd: Csapat<br>
+Semendi Ádám: Csapat<br>
+Szatmári Boldizsár: Csapat</p>
+
+<h3>Ütemterv:</h3>
+<p>A sprintek megkezdése előtti két hétben el kell készülnie a projekt dokumentumainak. A projekt kivitelezésére 5 egyhetes sprint áll rendelkezésre. Az első 2 sprint alatt el kell készülnie egy projektet bemutató demónak, melyet a megrendelő értékelhet a kész projekt átvétele előtt.</p>
+
+<h3>Mérföldkövek:</h3>
+<p>1. Funkciók meghatározása<br>
+2. UI megtervezése<br>
+3. Funkciók kivitelezése<br>
+4. UI kivitelezése<br>
+5. Funkciók integrálása<br>
+6. UI, Funkciók tesztelése</p>
+
+<h2>Architekturális terv:</h2>
+<p>A projekt során egy 3-rétegű Ionic framework segítségével megírt PHP webapplikáció fog megszületni.<br>
+Az applikáció adatbázisa MySQL alapú.<br>
+A rendszer könnyen bõvíthetõ extra funkciókkal.<br>
+Biztonsági funkciókra nincs szükség.</p>
+
+![Képernyőterv az weblapról Dark Mode-ban](resources/architectural_plan.png)
+
+<h2>Fizikai környezet</h2>
+<ul>
+<li> Az kérdőív a könnyű hozzáférhetőség és gyors működés érdekében a legtöbb modern böngészőben működni fog, így a legtöbb grafikus felülettel rendelkező operációs rendszer alatti működés alapvető.</li>
+<ul>
+    <li>Windows környezet alatt</li>
+    <li>Linux környezet alatt</li>
+    <li>macOS környezet alatt</li>
+    <li>Android környezet alatt</li>
+    <li>iOS környezet alatt</li>
+    </ul>
+<li>Ajánlott böngészők:</li>
+    <ul>
+    <li>Google Chrome</li> 
+    <li>Mozilla Firefox</li>
+    <li>Microsoft Edge</li>
+    <li>Safari</li>
+    <li>Opera</li>
+    </ul>
+<li>Ajánlott Architektúrák:</li>
+    <ul>
+    <li>ARM</li> 
+    <li>ARM64</li>
+    <li>x64</li>
+    <li>x86</li>
+    </ul>
+<li> Csak saját komponenseket használunk fel</li>
+<li>Fejlesztői eszközök:</li>
+<ul>
+    <li>Visual Studio</li>
+    <li>Intellij</li>
+    <li>Github</li>
+    <li>Trello</li>
+    </ul>
+</ul>
 <h2>Funkcionális terv</h2>
 <p>
 	Az önök elképzelései alapján a szoftver reszponzív dizájnt fog kapni. A válaszok
@@ -47,12 +125,12 @@ Az első oszlop a beküldött kérdőív azonosítóját tartalmazza ami autoinc
 A súly a PHP backend részlegén kerül kiszámításra a kérdőív első feléből amihez a "helyes_adatok" tábla ad irányt.
 A következő oszlopok az egyes eredményekre adott választ fogják külön tárolni, majd az utolsó oszlop a beküldés dátumát
 statisztika számolásához egy opcionális paraméter.</br>
-"helyes_adatok" tábla: </br>
-1.oszlop: első érték </br>
-2.oszlop: második érték </br>
-3.oszlop: harmadik érték </br>
-4.oszlop: negyedik érték </br>
-5.oszlop: ötödik érték </br>
+"helyes_adatok" tábla: </li>
+<li>1.oszlop: első érték </li>
+<li>2.oszlop: második érték </li>
+<li>3.oszlop: harmadik érték </li>
+<li>4.oszlop: negyedik érték </li>
+<li>5.oszlop: ötödik érték </li>
 A tábla a súly kiszámításához ad segítséget amiből ki lehet számolni a beküldő jártasságát a témában.
 A táblák között nem szerepel kapcsolat se függőség.
 </p>
@@ -94,11 +172,13 @@ a létrejött becslést. Továbbá a program log rendszerrel lesz ellátva, hogy
    <li>Tesztelés különböző operációs rendszereken.</li>
 </ul>
 <p><strong>- Unit tesztelés</strong></p>
+<p><strong>- Penetration teszt</strong></p>
 
 <h3>Tesztelés kontrollja</h3>
 <p>A kérdőív akkor megy át a tesztelés teljes fázisán, ha:
   <ul>
    <li>Átmegy a Unit teszteken</li>
+     <li> Átmegy a Penetration teszten</li>
    <li>Megjelenése minden eszközön használható és reszponzív.</li>
     <li>A válaszok eltárolása minden eszközön <strong>HELYESEN</strong> megtörténik.</li>
 </ul>
@@ -136,7 +216,50 @@ a létrejött becslést. Továbbá a program log rendszerrel lesz ellátva, hogy
    </ul>
 </p>
 
+<h2>Telepítési terv</h2>
+Az alkalmazásunkat a felhasználók egy webes felületen érhetik majd el.</br>
+A felhasználóknak nem szükséges semmi mást feltelepíteni egy használni kívánt böngészőn kívül.</br>
+Ez a böngésző lehet:</br>
+-Google Chrome</br>
+-Opera</br>
+-Safari</br>
+-Firefox</br>
+-Microsoft Edge</br>
+</br>
+
+<h2>Implementációs terv</h2>
+
+A weboldal alapjaa html és css lesz, működéséért egy php kód fog felelni.</br>
+A kinyert adatokat egy MySQL alapú adatbázisban tároljuk.</br>
+A felhasználó az oldalra érkezésekor kiválaszthatja, hogy melyik kérdőívet szeretné kitölteni.</br>
+Ennek kiválasztása után a kérdőív előtti teszthez kerül, aminek helyes kitöltése után léphet tovább a valódi kérdőívhez.</br>
+Azt, hogy a teszten elegendő pontszámot ért e el a kitöltő, egy php kóddal ellenőrizzük le.</br>
+Php kód lesz azért is a felelős, hogy a kérdőív kitöltése közben a kitöltő ne tudjon rossz választ adni (számok helyett betűk, stb.).</br>
+A kitöltés elvégzése után az adatbázisba továbbitjuk a kinyert információkat.</br>
+Amikor szükségünk lesz egy statisztikára, az adatbázisból hivjuk meg az adatokat, és egy algoritmussal elvégeztetjük a statisztikák elkészítését.</br>
+
+A statisztikákat megjelenitjük az oldalon és lehetőséget kinálunk ezek kimentésére.</br> 
 <h3>A rendszer követelményei</h3>
+
+
+A statisztikákat megjelenitjük az oldalon és lehetőséget kinálunk ezek kimentésére.</br> 
+
+A statisztikákat megjelenitjük az oldalon és lehetőséget kinálunk ezek kimentésére.</br> 
+
+<h3>Absztrakt domain modell</h3>
+
+Alkalmazásunk olyan részekből fog állni, melyek PHP, HTML és CSS részeket foglalnak magukba.
+Megvalósításra egy olyan rétegelt felépítésre gondoltunk, mely a következőket valósítja meg:
+<ul>
+   <li>Frontend felület, melyet a felhasználó lát és ezzel interakcionál</li>
+   <li>Backend felület, mely az adatbázissal való kapcsolatot biztosítja </li>
+</ul>
+Alkalmazásunk a felhasználó által megadott válaszokat egy form-on keresztül fogja megtenni.
+Ennek validálásáért egy olyan komponens fog felelni, mely figyeli a beírt adat helyességét és validitását.
+<img src="resources/adm.png">
+
+<h2>A rendszer követelményei</h2>
+
 
 A rendszer követelményei javarészt az olyan követelményeket foglal magába, melyek megvalósítását megcélozza a rendszerterv.
 Ezek a következők:
@@ -153,4 +276,3 @@ Ezek a következők:
 |-| K08| Webes reszponzív dizájn megléte|-|Hogy továbbra is a populáció nagy százalékának lehetősége legyen kitölteni a kérdőívet, hasonlóan a jelenlegi papíralapú rendszerhez, ezért a weboldal dizájnjának reszponzívnak kell lennie és megfelelően megjelennie és használhatónak lennie a jelenleg használt legtöbb eszközön(számítógépek, telefonok, tabletek) illetve modellen.|
 |-| K09| A rendszer egy kérdőívből álljon|-|A rendszer célja továbbra is egyértelműen az adatgyűjtés legyen, ezért egy egyszerűen kezelhető barátságos kérdőívből kell állnia.|
 |-| K10| Megfelelő súlyozás|-|A kapott válaszokat megfelelő súlyozással kell feldolgoznunk, mely függ a válaszadó előzetes tudásától, hogy megfelelő és valós statisztikát kaphassunk.|
-
