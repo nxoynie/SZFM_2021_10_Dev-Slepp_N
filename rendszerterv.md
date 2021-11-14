@@ -1,5 +1,3 @@
-
-
 <h1>Rendszerterv</h1>
 <h2>Telepítési terv</h2>
 Az alkalmazásunkat a felhasználók egy webes felületen érhetik majd el.</br>
@@ -22,6 +20,76 @@ Ez a böngésző lehet:</br>
    <li>Egy olyan felület biztosítása melyen található, Világos illetve Sötét mód, mely nagyítása lehetséges, biztosítva a felhasználók számára a kellemes és egyszerű kitöltést.</li>
    <li>A jelenlegi papír alapú rendszer teljes felváltása.</li>
 </ul></p>
+<h2>Projekt terv:</h2>
+
+
+<h3>Projektszerepkörök, felelősségek:</h3>
+<h4>Scrum Master:</h4>
+<p>Felügyeli a folyamat fenntartását, segíti a csapatot probléma esetén. Kezeli a projekt main ágát.<br>
+Felügyeli, hogy a csapattagok betartják-e a Scrum szabályokat, tartják-e a sprint határidejét.</p>
+<h4>Csapat:</h4>
+<p>Felelősek azért, hogy az aktuális sprintre bevállalt feladatokat elvégezzék.</p>
+
+<h3>Projektmunkások és szerepköreik:</h3>
+<p>Papp Csenge: Scrum Master, Csapat<br>
+Zselenák Flórián: Csapat<br>
+Hosszú Szilárd: Csapat<br>
+Semendi Ádám: Csapat<br>
+Szatmári Boldizsár: Csapat</p>
+
+<h3>Ütemterv:</h3>
+<p>A sprintek megkezdése előtti két hétben el kell készülnie a projekt dokumentumainak. A projekt kivitelezésére 5 egyhetes sprint áll rendelkezésre. Az első 2 sprint alatt el kell készülnie egy projektet bemutató demónak, melyet a megrendelő értékelhet a kész projekt átvétele előtt.</p>
+
+<h3>Mérföldkövek:</h3>
+<p>1. Funkciók meghatározása<br>
+2. UI megtervezése<br>
+3. Funkciók kivitelezése<br>
+4. UI kivitelezése<br>
+5. Funkciók integrálása<br>
+6. UI, Funkciók tesztelése</p>
+
+<h2>Architekturális terv:</h2>
+<p>A projekt során egy 3-rétegű Ionic framework segítségével megírt PHP webapplikáció fog megszületni.<br>
+Az applikáció adatbázisa MySQL alapú.<br>
+A rendszer könnyen bõvíthetõ extra funkciókkal.<br>
+Biztonsági funkciókra nincs szükség.</p>
+
+![Képernyőterv az weblapról Dark Mode-ban](resources/architectural_plan.png)
+
+<h2>Fizikai környezet</h2>
+<ul>
+<li> Az kérdőív a könnyű hozzáférhetőség és gyors működés érdekében a legtöbb modern böngészőben működni fog, így a legtöbb grafikus felülettel rendelkező operációs rendszer alatti működés alapvető.</li>
+<ul>
+    <li>Windows környezet alatt</li>
+    <li>Linux környezet alatt</li>
+    <li>macOS környezet alatt</li>
+    <li>Android környezet alatt</li>
+    <li>iOS környezet alatt</li>
+    </ul>
+<li>Ajánlott böngészők:</li>
+    <ul>
+    <li>Google Chrome</li> 
+    <li>Mozilla Firefox</li>
+    <li>Microsoft Edge</li>
+    <li>Safari</li>
+    <li>Opera</li>
+    </ul>
+<li>Ajánlott Architektúrák:</li>
+    <ul>
+    <li>ARM</li> 
+    <li>ARM64</li>
+    <li>x64</li>
+    <li>x86</li>
+    </ul>
+<li> Csak saját komponenseket használunk fel</li>
+<li>Fejlesztői eszközök:</li>
+<ul>
+    <li>Visual Studio</li>
+    <li>Intellij</li>
+    <li>Github</li>
+    <li>Trello</li>
+    </ul>
+</ul>
 <h2>Funkcionális terv</h2>
 <p>
 	Az önök elképzelései alapján a szoftver reszponzív dizájnt fog kapni. A válaszok
@@ -171,6 +239,10 @@ A kitöltés elvégzése után az adatbázisba továbbitjuk a kinyert informáci
 Amikor szükségünk lesz egy statisztikára, az adatbázisból hivjuk meg az adatokat, és egy algoritmussal elvégeztetjük a statisztikák elkészítését.</br>
 
 A statisztikákat megjelenitjük az oldalon és lehetőséget kinálunk ezek kimentésére.</br> 
+<h3>A rendszer követelményei</h3>
+
+
+A statisztikákat megjelenitjük az oldalon és lehetőséget kinálunk ezek kimentésére.</br> 
 
 A statisztikákat megjelenitjük az oldalon és lehetőséget kinálunk ezek kimentésére.</br> 
 
@@ -188,6 +260,7 @@ Ennek validálásáért egy olyan komponens fog felelni, mely figyeli a beírt a
 
 <h2>A rendszer követelményei</h2>
 
+
 A rendszer követelményei javarészt az olyan követelményeket foglal magába, melyek megvalósítását megcélozza a rendszerterv.
 Ezek a következők:
 
@@ -203,4 +276,3 @@ Ezek a következők:
 |-| K08| Webes reszponzív dizájn megléte|-|Hogy továbbra is a populáció nagy százalékának lehetősége legyen kitölteni a kérdőívet, hasonlóan a jelenlegi papíralapú rendszerhez, ezért a weboldal dizájnjának reszponzívnak kell lennie és megfelelően megjelennie és használhatónak lennie a jelenleg használt legtöbb eszközön(számítógépek, telefonok, tabletek) illetve modellen.|
 |-| K09| A rendszer egy kérdőívből álljon|-|A rendszer célja továbbra is egyértelműen az adatgyűjtés legyen, ezért egy egyszerűen kezelhető barátságos kérdőívből kell állnia.|
 |-| K10| Megfelelő súlyozás|-|A kapott válaszokat megfelelő súlyozással kell feldolgoznunk, mely függ a válaszadó előzetes tudásától, hogy megfelelő és valós statisztikát kaphassunk.|
-

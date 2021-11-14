@@ -30,6 +30,18 @@ function querry_the_data(){
     return json_encode($rows);
 }
 
+function querry_latest_average(){
+
+    $conn = connectdb();
+
+    $sth = mysqli_query($conn, "SELECT atlag, max(datum) FROM atlagok");
+    $average = mysqli_fetch_row($sth)[0];
+    
+    mysqli_close($conn);
+
+    return $average;
+}
+
 function insert_the_data($jsonobj){
     $data = json_decode($jsonobj);
     $suly = $data->suly;
@@ -50,6 +62,20 @@ function insert_the_data($jsonobj){
     $conn -> close();
     
     return $flag;
+}
+
+function insert_average_data($average) {
+    $date = date("Y/m/d H:i:s");
+
+    $conn = connectdb();
+    
+    $stmt = $conn->prepare("INSERT INTO atlagok (atlag, datum) VALUES (?,?)");
+
+    $stmt->bind_param("ds", $average, $date);
+    $stmt->execute();
+        
+    $stmt -> close();
+    $conn -> close();
 }
 
 function connectdb(){
