@@ -30,6 +30,16 @@ mat-divider {
             color: var(--ion-text-color) !important;
             margin-top: 5px;
             margin-bottom: 5px;
+            min-height: 48px;
+            height: fit-content;
+            display: flex;
+            align-items: center;
+        }
+
+        .mat-list-item-content {
+          display: flex;
+          height: 100%;
+          position: unset !important;
         }
 
         .mat-list-single-selected-option {
