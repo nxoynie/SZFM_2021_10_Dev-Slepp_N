@@ -108,7 +108,6 @@ export class FirstPartComponent implements OnInit {
       this.router.navigate(['/part-two'], { replaceUrl: true });
     },
     1500)
-
   }
 
   all_answered() {
