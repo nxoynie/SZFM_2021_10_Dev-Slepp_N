@@ -1,10 +1,10 @@
 <ng-template [ngIf]="welcome" [ngIfElse]="loading">
     <app-header text='Üdv a Questionnaire webalkalmazásunkban!'></app-header>
-    <div class="container">
-        <p>Üdvözöllek a Questionnaire webalkalmazásunkban!</p>
-        <p>Néhány kérdést fogunk feltenni hogy felmérjük a jártasságod a témakörben.</p>
-        <p>Ezt követően egy kérdést fogsz kapni, melyre válaszolnod kell.</p>
-        <p>Amennyiben készenállsz, nyomj a <strong>lenti</strong> gombra!</p>
+    <div style="text-align:center;" class="container">
+        <p>Üdvözöllek a Questionnaire webalkalmazásunkban!<br>
+        Néhány kérdést fogunk feltenni hogy felmérjük a jártasságod a témakörben.<br>
+        Ezt követően egy kérdést fogsz kapni, melyre válaszolnod kell.</p>
+        <p><strong>Amennyiben készenállsz, nyomj a lenti gombra!</strong></p>
         <button mat-raised-button (click)="goNext()">Tovább</button>
     </div>
 </ng-template>
