@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+.center{
+    color: var(--ion-text-color);
+    width: fit-content;
+    font-size: large;
+    position: fixed;
+    transform: translate(0%,50%);
+    -webkit-transform: translate(0%, 50%);
+    -moz-transform: translate(0%, 50%);
+    -o-transform: translate(0%, 50%);
+    -ms-transform: translate(0%, 50%);
+    padding: 5%;
+}
+svg {
+    fill: var(--ion-text-color);
+}
