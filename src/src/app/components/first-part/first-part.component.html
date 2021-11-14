@@ -1,9 +1,56 @@
-<app-header text="Jártasság felmérése"></app-header>
-<div class="container">
-  <p>Első körben a jártasságát fogjuk felmérni a témakörben. Ehhez válaszolja meg az alábbi kérdéseket.</p>
-  <!-- TODO: lecserelni formra, a kerdesekkel -->
-  <p>1. Kérdés</p>
-  <p>2. Kérdés</p>
-  <p>3. Kérdés</p>
-  <!-- -->
-</div>
+<ng-template [ngIf]="!done" [ngIfElse]="loading">
+  <app-header text="Jártasság felmérése"></app-header>
+  <div class="main">
+    <div class="container">
+      <p>Első körben a jártasságát fogjuk felmérni a témakörben. Ehhez válaszolja meg az alábbi kérdéseket.</p>
+    
+      <mat-divider></mat-divider>
+      <label>{{q1.question}}</label>
+      <mat-selection-list #quest1 (selectionChange)="onChange($event, 1)" [multiple]="false">
+        <mat-list-option *ngFor="let ans of q1.answers " [value]="ans">
+          {{ans}}
+        </mat-list-option>
+      </mat-selection-list>
+    
+      <mat-divider></mat-divider>
+      <label>{{q2.question}}</label>
+      <mat-selection-list #quest2 (selectionChange)="onChange($event, 2)" [multiple]="false">
+        <mat-list-option *ngFor="let ans of q2.answers " [value]="ans">
+          {{ans}}
+        </mat-list-option>
+      </mat-selection-list>
+    
+      <mat-divider></mat-divider>
+      <label>{{q3.question}}</label>
+      <mat-selection-list #quest3 (selectionChange)="onChange($event, 3)" [multiple]="false">
+        <mat-list-option *ngFor="let ans of q3.answers " [value]="ans">
+          {{ans}}
+        </mat-list-option>
+      </mat-selection-list>
+    
+      <mat-divider></mat-divider>
+      <label>{{q4.question}}</label>
+      <mat-selection-list #quest4 (selectionChange)="onChange($event, 4)" [multiple]="false">
+        <mat-list-option *ngFor="let ans of q4.answers " [value]="ans">
+          {{ans}}
+        </mat-list-option>
+      </mat-selection-list>
+    
+      <mat-divider></mat-divider>
+      <label>{{q5.question}}</label>
+      <mat-selection-list #quest5 (selectionChange)="onChange($event, 5)" [multiple]="false">
+        <mat-list-option *ngFor="let ans of q5.answers " [value]="ans">
+          {{ans}}
+        </mat-list-option>
+      </mat-selection-list>
+    
+      <button mat-raised-button [disabled]=" !all_answered() " (click)="onSubmit()">Tovább</button>
+    
+    </div>
+  </div>
+</ng-template>
+<ng-template #loading class="ringcontainer">
+  <div class="lds-ring">
+      <div></div><div></div><div></div><div></div>
+  </div>
+</ng-template>
