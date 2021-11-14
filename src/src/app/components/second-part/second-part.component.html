@@ -1,0 +1,34 @@
+<ng-template [ngIf]="!done" [ngIfElse]="loading">
+  <app-header text="Predikció"></app-header>
+  <div class="main">
+    <div class="container">
+      <p>Most pedig következhet a predikciós kérdés. Kérjük válaszolja meg az alábbi kérdést</p>
+    
+      <mat-divider></mat-divider>
+
+      <div class="question">
+        <p>{{q_pre.question}}</p>
+        <ol>
+          <li *ngFor="let ans of q_pre.answers">{{ans}}</li>
+        </ol>
+        <mat-slider
+                class="example-margin"
+                [max]="5"
+                [min]="1"
+                [step]="1"
+                [thumbLabel]="true"
+                [(ngModel)]="value"
+                [vertical]="false">
+        </mat-slider>
+      </div>
+    
+    </div>
+
+    <button mat-raised-button (click)="onSubmit()">Tovább</button>
+  </div>
+</ng-template>
+<ng-template #loading class="ringcontainer">
+  <div class="lds-ring">
+      <div></div><div></div><div></div><div></div>
+  </div>
+</ng-template>

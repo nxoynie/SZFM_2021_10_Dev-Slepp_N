@@ -1,5 +1,14 @@
 <h1>Rendszerterv</h1>
-
+<h2>Telepítési terv</h2>
+Az alkalmazásunkat a felhasználók egy webes felületen érhetik majd el.</br>
+A felhasználóknak nem szükséges semmi mást feltelepíteni egy használni kívánt böngészőn kívül.</br>
+Ez a böngésző lehet:</br>
+-Google Chrome</br>
+-Opera</br>
+-Safari</br>
+-Firefox</br>
+-Microsoft Edge</br>
+</br>
 <h2>A rendszer célja</h2>
 <p><strong>Az általunk létrehozni kívánt rendszer célja, hogy az Önök elvárásait elégítse ki a lehető legnagyobb mértékben. Ennek a rendszernek a céljai a következők:
    </strong>
@@ -228,8 +237,29 @@ Azt, hogy a teszten elegendő pontszámot ért e el a kitöltő, egy php kóddal
 Php kód lesz azért is a felelős, hogy a kérdőív kitöltése közben a kitöltő ne tudjon rossz választ adni (számok helyett betűk, stb.).</br>
 A kitöltés elvégzése után az adatbázisba továbbitjuk a kinyert információkat.</br>
 Amikor szükségünk lesz egy statisztikára, az adatbázisból hivjuk meg az adatokat, és egy algoritmussal elvégeztetjük a statisztikák elkészítését.</br>
+
 A statisztikákat megjelenitjük az oldalon és lehetőséget kinálunk ezek kimentésére.</br> 
 <h3>A rendszer követelményei</h3>
+
+
+A statisztikákat megjelenitjük az oldalon és lehetőséget kinálunk ezek kimentésére.</br> 
+
+A statisztikákat megjelenitjük az oldalon és lehetőséget kinálunk ezek kimentésére.</br> 
+
+<h3>Absztrakt domain modell</h3>
+
+Alkalmazásunk olyan részekből fog állni, melyek PHP, HTML és CSS részeket foglalnak magukba.
+Megvalósításra egy olyan rétegelt felépítésre gondoltunk, mely a következőket valósítja meg:
+<ul>
+   <li>Frontend felület, melyet a felhasználó lát és ezzel interakcionál</li>
+   <li>Backend felület, mely az adatbázissal való kapcsolatot biztosítja </li>
+</ul>
+Alkalmazásunk a felhasználó által megadott válaszokat egy form-on keresztül fogja megtenni.
+Ennek validálásáért egy olyan komponens fog felelni, mely figyeli a beírt adat helyességét és validitását.
+<img src="resources/adm.png">
+
+<h2>A rendszer követelményei</h2>
+
 
 A rendszer követelményei javarészt az olyan követelményeket foglal magába, melyek megvalósítását megcélozza a rendszerterv.
 Ezek a következők:
