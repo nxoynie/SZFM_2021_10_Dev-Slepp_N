@@ -6,18 +6,13 @@ p {
 }
 .container {
     margin: 0 auto;
-    margin-top: 200px; //
+    margin-top: 20%; //
     width: fit-content;
-}
-strong {
-    margin-left: 3px;
-    margin-right: 3px;
+    padding: 5%;
 }
 button {
     color: black;
-    margin-top: 50px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    margin-top: 10%;
 }
 
 // spinner
