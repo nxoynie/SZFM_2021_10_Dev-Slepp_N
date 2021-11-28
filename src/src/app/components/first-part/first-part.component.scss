@@ -34,6 +34,8 @@ mat-divider {
             height: fit-content;
             display: flex;
             align-items: center;
+            border: 1px solid var(--ion-text-color);
+            border-radius: 3px;
         }
 
         .mat-list-item-content {
