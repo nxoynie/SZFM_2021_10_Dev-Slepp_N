@@ -1,6 +1,6 @@
 # Kérdések és válaszok a streaming szolgáltatásokról és a Netflixről
 
-## Mi a Netflix?
+## Mi a Netflix Inc.?
 - édesség
 - médiaszolgáltató és produkciós vállalat(Helyes)
 - videójáték-ipar egyik vezető fejlesztő és kiadó cége
