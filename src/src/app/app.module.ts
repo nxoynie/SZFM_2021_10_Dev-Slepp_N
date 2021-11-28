@@ -17,12 +17,13 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ThankyouPageComponent } from './components/thankyou-page/thankyou-page.component';
+import { DigitOnlyModule } from '@uiowa/digit-only';
 
 @NgModule({
   declarations: [AppComponent, ColorModeComponent, HeaderComponent, WelcomePageComponent, FirstPartComponent, SecondPartComponent, ThankyouPageComponent],
 
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AngularMaterialModule, BrowserAnimationsModule, FormsModule, ReactiveFormsModule, HttpClientModule],
+  imports: [DigitOnlyModule, BrowserModule, IonicModule.forRoot(), AppRoutingModule, AngularMaterialModule, BrowserAnimationsModule, FormsModule, ReactiveFormsModule, HttpClientModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, HttpClient, {provide: APP_BASE_HREF, useValue : '/' }],
   bootstrap: [AppComponent],
 })

@@ -131,3 +131,8 @@ app-header {
   .example-result-card .example-value-label {
     font-weight: 600;
   }
+
+  ::ng-deep .mat-form-field-flex {
+    background-color: whitesmoke !important;
+    color: black !important;
+  }

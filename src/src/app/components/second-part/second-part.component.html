@@ -6,21 +6,45 @@
     
       <mat-divider></mat-divider>
 
-      <div class="question">
-        <p>{{q_pre.question}}</p>
-        <ol>
-          <li *ngFor="let ans of q_pre.answers">{{ans}}</li>
-        </ol>
-        <mat-slider
-                class="example-margin"
-                [max]="5"
-                [min]="1"
-                [step]="1"
-                [thumbLabel]="true"
-                [(ngModel)]="value"
-                [vertical]="false">
-        </mat-slider>
-      </div>
+      <ng-container *ngIf="this.type == 'bitcoin' ">
+        <div class="question">
+          <p>{{questions.q_pre1.question}}</p>
+          <ol>
+            <li *ngFor="let ans of questions.q_pre1.answers">{{ans}}</li>
+          </ol>
+          <mat-slider
+                  class="example-margin"
+                  [max]="5"
+                  [min]="1"
+                  [step]="1"
+                  [thumbLabel]="true"
+                  [(ngModel)]="value"
+                  [vertical]="false">
+          </mat-slider>
+        </div>
+      </ng-container>
+
+      <ng-container *ngIf="this.type == 'forma1' ">
+        <div class="question">
+          <p>{{questions.q_pre1.question}}</p>
+          
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Becslés</mat-label>
+            <input matInput digitOnly placeholder="Ex. 123" (input)="value_forma1_1 = $event.target.value">
+          </mat-form-field>
+        
+        </div>
+
+        <div class="question">
+          <p>{{questions.q_pre2.question}}</p>
+          
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Becslés</mat-label>
+            <input matInput digitOnly placeholder="Ex. 123" (input)="value_forma1_2 = $event.target.value">
+          </mat-form-field>
+        
+        </div>
+      </ng-container>
     
     </div>
 
