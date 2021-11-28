@@ -1,5 +1,5 @@
 import { Router } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 import { DataService } from 'src/app/services/data-service.service';
 
 @Component({
@@ -13,24 +13,31 @@ export class SecondPartComponent implements OnInit {
       predikcios_ertek: 0
     }
 
-    constructor(private dataService: DataService, private router: Router) { }
+    constructor(private elRef: ElementRef, private dataService: DataService, private router: Router) { }
+
+    questions
+    
+    type = ''
 
     ngOnInit() {
-      console.log(this.dataService.result)
+      this.type = this.dataService.type
+      this.questions = this.dataService.getData('part-two')
+      console.log(this.questions)
     }
 
     value = 0
 
+    value_forma1_1 = 0
+    value_forma1_2 = 0
+
     done =  false
 
-    q_pre={
-      question: 'Jelenleg egy darab Bitcoin egyenértékű 20 794 039,98 magyar forrinttal, mit gondolsz, 10 éven belül lehetséges-e ,hogy munkahelyen Bitcoin-ba kapják az emberek a fizetést?',
-      answers:[
-        'Nem valószínű', 'Talán', 'Neutrális' ,'Elképzelhető', 'Elég sok esély látok rá'
-      ]
-    }
+    q_pre = {}
 
     onSubmit() {
+        if(this.type == 'forma1') {
+          this.value = this.value_forma1_1 // csak az egyik valaszt mentjuk el egyelore!
+        }
         this.result.predikcios_ertek = this.value
         console.log(this.result)
         this.done = true
