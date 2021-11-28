@@ -1,11 +1,18 @@
 <ng-template [ngIf]="welcome" [ngIfElse]="loading">
     <app-header text='Üdv a Questionnaire webalkalmazásunkban!'></app-header>
+
     <div style="text-align:center;" class="container">
         <p>Üdvözöllek a Questionnaire webalkalmazásunkban!<br>
         Néhány kérdést fogunk feltenni hogy felmérjük a jártasságod a témakörben.<br>
-        Ezt követően egy kérdést fogsz kapni, melyre válaszolnod kell.</p>
+        Ezt követően egy kérdést fogsz kapni, melyre válaszolnod kell.<br><br>
+        Kérjük válaszd ki a kívánt témakört.
+        </p>
+        <div class="chooser">
+            <button mat-raised-button (click)="this.type = 'bitcoin' " [ngClass]="type == 'bitcoin' ? 'selected-chooser' :'unselected-chooser' ">Bitcoin</button>
+            <button mat-raised-button (click)="this.type = 'forma1' " [ngClass]="type == 'forma1' ? 'selected-chooser' : 'unselected-chooser' ">Forma 1</button>
+        </div>
         <p><strong>Amennyiben készenállsz, nyomj a lenti gombra!</strong></p>
-        <button mat-raised-button (click)="goNext()">Tovább</button>
+        <button mat-raised-button (click)="goNext()" [disabled]="!this.type ? 'disabled': null" >Tovább</button>
     </div>
 </ng-template>
 <ng-template #loading class="ringcontainer">
