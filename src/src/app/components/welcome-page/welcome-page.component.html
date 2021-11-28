@@ -8,11 +8,11 @@
         Kérjük válaszd ki a kívánt témakört.
         </p>
         <div class="chooser">
-            <button mat-raised-button (click)="this.type = 'bitcoin' " [ngClass]="type == 'bitcoin' ? 'selected-chooser' :'unselected-chooser' ">Bitcoin</button>
-            <button mat-raised-button (click)="this.type = 'forma1' " [ngClass]="type == 'forma1' ? 'selected-chooser' : 'unselected-chooser' ">Forma 1</button>
+            <button id="btc" mat-raised-button (click)="this.type = 'bitcoin' " [ngClass]="type == 'bitcoin' ? 'selected-chooser' :'unselected-chooser' ">Bitcoin</button>
+            <button id="f1" mat-raised-button (click)="this.type = 'forma1' " [ngClass]="type == 'forma1' ? 'selected-chooser' : 'unselected-chooser' ">Forma 1</button>
         </div>
         <p><strong>Amennyiben készenállsz, nyomj a lenti gombra!</strong></p>
-        <button mat-raised-button (click)="goNext()" [disabled]="!this.type ? 'disabled': null" >Tovább</button>
+        <button mat-raised-button id="next" (click)="goNext()" [disabled]="!this.type ? 'disabled': null" >Tovább</button>
     </div>
 </ng-template>
 <ng-template #loading class="ringcontainer">

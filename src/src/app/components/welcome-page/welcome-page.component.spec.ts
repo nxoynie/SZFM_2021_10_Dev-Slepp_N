@@ -34,12 +34,33 @@ describe('WelcomePageComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should navigate and other stuff', function(done) {
+  it('should navigate and other stuff if F1', function(done) {
     spyOn(component, 'goNext').and.callThrough()
     component.welcome = true
     fixture.detectChanges()
-    let button = fixture.debugElement.query(By.css('button'));
-    button.triggerEventHandler('click', {})
+    let f1btn = fixture.debugElement.query(By.css('#f1'));
+    let nextbtn = fixture.debugElement.query(By.css('#next'));
+    f1btn.triggerEventHandler('click', {})
+    fixture.detectChanges()
+    nextbtn.triggerEventHandler('click', {})
+    fixture.detectChanges()
+    expect(component.goNext).toHaveBeenCalled()
+    expect(component.welcome).toEqual(false)
+    setTimeout(function() {
+      expect(mockRouter.navigate).toHaveBeenCalledWith([ '/part-one' ], Object({ replaceUrl: true }))
+      done();
+    }, 3100);
+  });
+
+  it('should navigate and other stuff if BTC ', function(done) {
+    spyOn(component, 'goNext').and.callThrough()
+    component.welcome = true
+    fixture.detectChanges()
+    let f1btn = fixture.debugElement.query(By.css('#btc'));
+    let nextbtn = fixture.debugElement.query(By.css('#next'));
+    f1btn.triggerEventHandler('click', {})
+    fixture.detectChanges()
+    nextbtn.triggerEventHandler('click', {})
     fixture.detectChanges()
     expect(component.goNext).toHaveBeenCalled()
     expect(component.welcome).toEqual(false)
