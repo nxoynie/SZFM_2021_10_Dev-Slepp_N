@@ -17,22 +17,23 @@
 - Ausztria
 - Ausztrália
 
+## A felsoroltak közül, ki nyerte a 2020-as F1 szezont?
+- Lewis Hamilton (helyes)
+- Max Verstappen
+- Sergio Perez
+- George Russell
+
+## A felsoroltak közül, melyik a legrövidebb pálya?
+- Hungaroring
+- Monaco (Helyes)
+- Bahrain
+- Silverstone
+
 # Predikciós kérdések
 
-## Ki nyeri a 2022-es F1 szezont?
+## Hány évig fognak még F1 szezonokat rendezni?
 
-- 1. Lewis Hamilton
-- 2. Max Verstappen
-- 3. Sergio Perez
-- 4. George Russell
-- 5. Nem szerepel a listán
-
-## Melyik konstruktőr nyeri a 2022-es F1 szezont?
-- 1. Mercedes
-- 2. Red Bull Racing
-- 3. Ferrari
-- 4. Alpine
-- 5. Nem szerepel a listán
+## Hány pontja lesz Lewis Hamiltonnak a 2022-es F1 szezon végén?
 
 
 

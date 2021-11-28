@@ -6,13 +6,33 @@ p {
 }
 .container {
     margin: 0 auto;
-    margin-top: 20%; //
+    margin-top: 15%; //
     width: fit-content;
     padding: 5%;
 }
 button {
     color: black;
     margin-top: 10%;
+}
+
+.selected-chooser {
+    border: 2px solid var(--ion-text-color);
+}
+.unselected-chooser {
+  background-color: gray !important;
+}
+
+.chooser {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  width: 50%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  button {
+    margin-top: 0% !important;
+  }
 }
 
 // spinner
