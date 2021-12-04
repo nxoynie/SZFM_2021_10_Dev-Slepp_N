@@ -16,5 +16,7 @@ for ($i = 0; $i < $number_of_rows; $i++) {
 
 $average = array_sum($results) / $number_of_rows;
 
-insert_average_data($average);
+if ($average != querry_latest_average()) {
+    insert_average_data($average);
+}
 ?>
