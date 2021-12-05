@@ -1,5 +1,6 @@
 <?php
 require("../php/database_agent.php");
+require_once("../php/json_process.php");
 
 try {
     $raw_input = json_decode(file_get_contents("php://input"));
