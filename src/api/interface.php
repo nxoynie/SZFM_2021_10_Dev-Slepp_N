@@ -1,5 +1,4 @@
 <?php
-
 /*
 JSON objektum = {
     "elso_ertek" = int(1-4)
@@ -8,6 +7,7 @@ JSON objektum = {
     "negyedik_ertek" = int(1-4)
     "otodik_ertek" = int(1-4)
     "predikcios_ertek" = int(1-5)
+    "kerdoiv" = "bitcoin"/"forma1"
 }
 */
 
@@ -48,7 +48,7 @@ $data = json_encode(
     ]
     );
 
-insert_the_data($data);
+insert_the_data($data, $sanitazed_input -> kerdoiv . "_kerdoivek");
 
 
 
