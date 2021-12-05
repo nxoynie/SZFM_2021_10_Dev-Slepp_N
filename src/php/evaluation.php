@@ -10,7 +10,7 @@ try {
         throw new Exception("Invalid JSON input");
     }
         
-    $sanitazed_input = prepare_input($raw_input);*/
+    $sanitazed_input = prepare_input($raw_input);
 
     $database = $sanitazed_input -> kerdoiv; //bitcoin/forma1
 
