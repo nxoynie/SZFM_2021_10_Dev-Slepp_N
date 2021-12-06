@@ -9,6 +9,7 @@ function prepare_input($obj){
             
         $tmp[$key] = (int)$obj->$key;
      }
+     $tmp["kerdoiv"] = $obj->kerdoiv;
 
      return (object) $tmp;
     

@@ -15,11 +15,11 @@
 
 */
 
-function querry_the_data(){
+function querry_the_data($database) {
 
     $conn = connectdb();
 
-    $sth = mysqli_query($conn, "SELECT * FROM kerdoivek;");
+    $sth = mysqli_query($conn, "SELECT * FROM $database;");
     $rows = array();
     while($r = mysqli_fetch_assoc($sth)) {
         $rows[] = $r;
@@ -30,19 +30,19 @@ function querry_the_data(){
     return json_encode($rows);
 }
 
-function querry_latest_average(){
+function querry_latest_average($database) {
 
     $conn = connectdb();
 
-    $sth = mysqli_query($conn, "SELECT atlag, max(datum) FROM atlagok");
+    $sth = mysqli_query($conn, "SELECT atlag FROM $database WHERE datum = (SELECT max(datum) FROM $database);");
     $average = mysqli_fetch_row($sth)[0];
-    
+        
     mysqli_close($conn);
 
     return $average;
 }
 
-function insert_the_data($jsonobj){
+function insert_the_data($jsonobj, $database) {
     $data = json_decode($jsonobj);
     $suly = $data->suly;
     $predikcios_ertek = $data->predikcios_ertek;
@@ -52,7 +52,7 @@ function insert_the_data($jsonobj){
 
     $conn = connectdb();
  
-    $stmt = $conn->prepare("INSERT INTO kerdoivek (suly, predikcio, datum) 
+    $stmt = $conn->prepare("INSERT INTO $database (suly, predikcio, datum) 
     VALUES (?,?,?)");
     $stmt->bind_param("dis", $suly,$predikcios_ertek,$datum);
     $stmt->execute();
@@ -64,18 +64,43 @@ function insert_the_data($jsonobj){
     return $flag;
 }
 
-function insert_average_data($average) {
+function insert_average_data($average, $database) {
     $date = date("Y/m/d H:i:s");
 
     $conn = connectdb();
     
-    $stmt = $conn->prepare("INSERT INTO atlagok (atlag, datum) VALUES (?,?)");
+    $stmt = $conn->prepare("INSERT INTO $database (atlag, datum) VALUES (?,?)");
 
     $stmt->bind_param("ds", $average, $date);
     $stmt->execute();
         
     $stmt -> close();
     $conn -> close();
+}
+
+function data_to_csv($database) {
+
+    $conn = connectdb();
+
+    $sth = mysqli_query($conn, "SELECT * FROM $database;");
+
+    $f = fopen('php://memory', 'w');
+
+    $fields = array('atlag', 'datum'); 
+    fputcsv($f, $fields, ',');
+
+    while($row = mysqli_fetch_assoc($sth)) { 
+        $linedata = array($row['atlag'], $row['datum']);
+
+        fputcsv($f, $linedata, ',');
+    }
+
+    fseek($f, 0); 
+     
+    header('Content-Type: text/csv'); 
+    header('Content-Disposition: attachment; filename="' . $database . ".csv" . '";'); 
+     
+    fpassthru($f); 
 }
 
 function connectdb(){
